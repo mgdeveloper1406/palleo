@@ -1,0 +1,19 @@
+[
+    {
+        "id": "aunt-sallys-meatloaf",
+        "productURL": "http://www.wallingspencer.com/prairie-raised-ground-beef/",
+        "imageUrl": "img/full/canstockphoto20052376.jpg", 
+        "imageThumbUrl": "img/thumbnail/canstockphoto20052376.jpg", 
+        "name": "Aunt Sally's Meatloaf", 
+        "snippet": "Not your mother's meatloaf"
+    }, 
+    {
+        "id": "beef-carpaccio",
+        "productURL": "http://www.wallingspencer.com/filet-mignon-steak-2-pack/",
+        "alternateProductURL": "http://www.wallingspencer.com/sirloin-chateau-steaks-2-pack/",
+        "imageUrl": "img/full/canstockphoto18106517.jpg",
+        "imageThumbUrl": "img/thumbnail/canstockphoto18106517.jpg",
+        "name": "Beef Carpaccio",
+        "snippet": "Italian version of beef tatare"
+    }
+]
