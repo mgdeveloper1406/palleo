@@ -10,13 +10,13 @@
  -->
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar bar-nav">
-    <h1 class="title">Paleo Recipes</h1>
+    <h1 class="title">Top Recipes</h1>
   </header>
   <div class="content">
-    <div class="card">
+    
       <ul class="table-view">
         <li ng-repeat="recipe in recipes | filter:query | orderBy:orderProp" class="table-view-cell media">
-          <a class="navigate-right" data-transition="slide-in" href="#/recipes/{{recipe.id}}">
+          <a class="navigate" data-transition="slide-in" href="#/recipes/{{recipe.id}}">
             <img class="media-object pull-left" ng-src="{{recipe.smallImageUrl}}">
             <div class="media-body">
               {{recipe.name}}
@@ -35,7 +35,7 @@
             <div class="media-body">
               {{recipe.name}}
               <p>{{recipe.snippet}}</p>
-              <!-- <p>Stars: {{recipe.stars.avg}}</p> -->
+              <p>Stars: {{recipe.stars.avg}}</p>
             </div>
           </a>
           <!-- <div ng-init="rating = star.rating + 1"></div>
@@ -45,15 +45,13 @@
       <div class="slider" id="mySlider">
         <div class="slide-group">
           <div ng-repeat="recipe in recipes | filter:query | orderBy:orderProp" class="slide" >
-            <img ng-src="{{recipe.mediumImageUrl}}">
-            <span class="slide-text">
-              <span class="icon icon-left-nav"></span>
-              Slide me
-            </span>
+            <a data-transition="slide-in" href="#/recipes/{{recipe.id}}">
+              <img ng-src="{{recipe.mediumImageUrl}}">
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    
   </div>
 <footer>  
 <nav class="bar bar-tab">

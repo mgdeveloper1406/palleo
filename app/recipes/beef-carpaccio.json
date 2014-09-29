@@ -5,7 +5,7 @@
     "stars": {
         "avg": 1,
         "max": 5,
-        "totalVotes": 100
+        "votes": 100
         },    
     "largeImageUrl": "img/large/canstockphoto18106517.jpg", 
     "mediumImageUrl": "img/medium/canstockphoto18106517.jpg", 
@@ -13,11 +13,13 @@
     "xsmallImageUrl": "img/xsmall/canstockphoto18106517.jpg",         
     "products": [
         {
-            "product": "Fillet Mignon Steaks",
+            "productSKU": "104",
+            "productName": "Fillet Mignon Steaks",
             "productURL": "http://www.wallingspencer.com/filet-mignon-steak-2-pack/"
         },
         {
-            "product": "Sirloin Chateau Steaks",
+            "productSKU": "105",
+            "productName": "Sirloin Chateau Steaks",
             "productURL": "http://www.wallingspencer.com/sirloin-chateau-steaks-2-pack/"
         }
     ],
