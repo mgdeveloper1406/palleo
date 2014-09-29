@@ -1,30 +1,81 @@
 <!--Conteroller: recipeListCtrl in app.js -->
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-2">
-      <!--Sidebar content-->
 
-      Search: <input ng-model="query">
+ <!--      Search: <input ng-model="query">
       Sort by:
       <select ng-model="orderProp">
         <option value="name">Alphabetical</option>
         <option value="-stars">Rating</option>
       </select>
-
-    </div>
-    <div class="col-md-10">
-      <!--Body content-->
-      <ul class="recipes">
-        <li ng-repeat="recipe in recipes | filter:query | orderBy:orderProp" class="thumbnail"> 
-          <a href="#/recipes/{{recipe.id}}" class="thumb"><img ng-src="{{recipe.smallImageUrl}}"></a>
-          <a href="#/recipes/{{recipe.id}}">{{recipe.name}}</a>
-          <p>{{recipe.snippet}}</p>
-          <p>Stars: {{recipe.stars.avg}}</p>
+ -->
+  <!-- Make sure all your bars are the first things in your <body> -->
+  <header class="bar bar-nav">
+    <h1 class="title">Paleo Recipes</h1>
+  </header>
+  <div class="content">
+    <div class="card">
+      <ul class="table-view">
+        <li ng-repeat="recipe in recipes | filter:query | orderBy:orderProp" class="table-view-cell media">
+          <a class="navigate-right" data-transition="slide-in" href="#/recipes/{{recipe.id}}">
+            <img class="media-object pull-left" ng-src="{{recipe.smallImageUrl}}">
+            <div class="media-body">
+              {{recipe.name}}
+              <p>{{recipe.snippet}}</p>
+              <!-- <p>Stars: {{recipe.stars.avg}}</p> -->
+            </div>
+          </a>
           <!-- <div ng-init="rating = star.rating + 1"></div>
           <div class="star-rating" star-rating rating-value="rating" data-max="10" on-rating-selected="rateFunction(rating)"></div> -->
         </li>
       </ul>
+      <ul class="table-view">
+        <li ng-repeat="recipe in recipes | filter:query | orderBy:orderProp" class="table-view-cell media">
+          <a class="navigate-right" data-transition="slide-in" href="#/recipes/{{recipe.id}}">
+            <img class="media-object" ng-src="{{recipe.mediumImageUrl}}">
+            <div class="media-body">
+              {{recipe.name}}
+              <p>{{recipe.snippet}}</p>
+              <!-- <p>Stars: {{recipe.stars.avg}}</p> -->
+            </div>
+          </a>
+          <!-- <div ng-init="rating = star.rating + 1"></div>
+          <div class="star-rating" star-rating rating-value="rating" data-max="10" on-rating-selected="rateFunction(rating)"></div> -->
+        </li>
+      </ul>
+      <div class="slider" id="mySlider">
+        <div class="slide-group">
+          <div ng-repeat="recipe in recipes | filter:query | orderBy:orderProp" class="slide" >
+            <img ng-src="{{recipe.mediumImageUrl}}">
+            <span class="slide-text">
+              <span class="icon icon-left-nav"></span>
+              Slide me
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+<footer>  
+<nav class="bar bar-tab">
+  <a class="tab-item active" href="#">
+    <span class="icon icon-home"></span>
+    <span class="tab-label">Home</span>
+  </a>
+  <a class="tab-item" href="#">
+    <span class="icon icon-person"></span>
+    <span class="tab-label">Profile</span>
+  </a>
+  <a class="tab-item" href="#">
+    <span class="icon icon-star-filled"></span>
+    <span class="tab-label">Favorites</span>
+  </a>
+  <a class="tab-item" href="#">
+    <span class="icon icon-search"></span>
+    <span class="tab-label">Search</span>
+  </a>
+  <a class="tab-item" href="#">
+    <span class="icon icon-gear"></span>
+    <span class="tab-label">Settings</span>
+  </a>
+</nav>
+</footer>

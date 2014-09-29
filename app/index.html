@@ -3,9 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title>Paleo Recipe App</title>
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="css/app.css">
+      <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="bower_components/ratchet/dist/css/ratchet.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"> -->
   <!-- <link rel="stylesheet" href="css/rating.css"> -->
+  <link rel="stylesheet" href="css/app.css">
+  
+  <!-- JS in the header? -->
+  <script src="bower_components/ratchet/dist/js/ratchet.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/angular-resource/angular-resource.js"></script>

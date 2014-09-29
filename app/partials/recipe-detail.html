@@ -1,24 +1,52 @@
 <!--Conteroller: recipeDetailCtrl in app.js -->
-  <h1>{{recipe.name}}</h1>
-  <a href="{{recipe.productURL}}"><img ng-src="{{recipe.mediumImageUrl}}"></a>
-  <p>{{recipe.description}}</p>
-  <p><b>Stars:</b> {{recipe.stars.avg}}</p>
-  <h2>Ingredients</h2>
+    <!-- Make sure all your bars are the first things in your <body> -->
+<header class="bar bar-nav">
+  <a class="icon icon-left-nav pull-left" href="./index.html" data-transition="slide-out"></a>
+  <a class="icon icon-share pull-right"></a>
+  <h1 class="title">{{recipe.name}}</h1>
+</header>
+
+<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+<div class="content">
+  <div class="card">
+    <ul class="table-view">
+            
+    <li class="table-view-cell">
+      <p class="content-padded">{{recipe.description}}</p>
+      <a href="{{recipe.productURL}}"><img ng-src="{{recipe.mediumImageUrl}}"></a>
+      <p><b>Stars:</b> {{recipe.stars.avg}}</p>
+    </li>  
+    <li class="table-view-cell">
+      <h3>Ingredients</h3>
       <ul>
         <li ng-repeat="ingredient in recipe.ingredients"> 
             <p>{{ingredient.ingredient}}</p>
         </li>
       </ul>
-<h2>Directions</h2>
+    </li>
+    <li class="table-view-cell">
+      <h3>Directions</h3>
       <ul>
         <li ng-repeat="direction in recipe.directions"> 
             <p>{{direction.direction}}</p>
         </li>
       </ul>
-
-<h2>Notes</h2>
+    </li>
+    <li class="table-view-cell">
+      <h3>Notes</h3>
       <ul>
         <li ng-repeat="note in recipe.notes"> 
             <p>{{note.note}}</p>
         </li>
       </ul>
+    </li>
+    <li class="table-view-cell">
+      <h3>Purchase</h3>
+      <ul class="table-view">
+        <li class="table-view-cell" ng-repeat="product in recipe.products"> 
+          <a class="push-right" href="{{product.productURL}}">{{product.product}}</a>
+        </li>
+      </ul>
+    </li>
+  </div>  
+</div>

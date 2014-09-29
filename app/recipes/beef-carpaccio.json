@@ -11,8 +11,16 @@
     "mediumImageUrl": "img/medium/canstockphoto18106517.jpg", 
     "smallImageUrl": "img/small/canstockphoto18106517.jpg",
     "xsmallImageUrl": "img/xsmall/canstockphoto18106517.jpg",         
-    "productURL": "http://www.wallingspencer.com/filet-mignon-steak-2-pack/",
-    "alternateProductURL": "http://www.wallingspencer.com/sirloin-chateau-steaks-2-pack/",
+    "products": [
+        {
+            "product": "Fillet Mignon Steaks",
+            "productURL": "http://www.wallingspencer.com/filet-mignon-steak-2-pack/"
+        },
+        {
+            "product": "Sirloin Chateau Steaks",
+            "productURL": "http://www.wallingspencer.com/sirloin-chateau-steaks-2-pack/"
+        }
+    ],
     "description": "Carpaccio is an Italian version of beef tatare. Made of raw beef and dressed with lemony mayonnaise, it was created in Harry's Bar in Venice, which, despite the name, is actually a first class restaurant opened by an Italian named Giuseppe Cipriani in 1931.",
     "ingredients": [
         {
