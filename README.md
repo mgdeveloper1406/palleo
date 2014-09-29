@@ -2,11 +2,29 @@
 
 ## Overview
 
+A blending of phonecat and ratchet
+
 Local hosting using node on http://localhost:8000/app 
 
 $ npm start 
 
+
+
+## Dependencies
+
+photo dimensions:
+
+large: 764 x 509 (iPad mini: 764 x 1024)
+medium: 375 x 250 (iPhone 6: 375 x 667)
+small: 96 x 64 
+xsmall: 64 x 43 (thumbnail)
+
+
+
 ## Prerequisites
+
+Pictures of recipes:
+
 
 ### Git
 

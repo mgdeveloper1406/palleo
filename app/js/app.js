@@ -12,15 +12,15 @@ var paleoApp = angular.module('paleoApp', [
 paleoApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/phones', {
-        templateUrl: 'partials/phone-list.html',
-        controller: 'PhoneListCtrl'
+      when('/recipes', {
+        templateUrl: 'partials/recipe-list.html',
+        controller: 'RecipeListCtrl'
       }).
-      when('/phones/:phoneId', {
-        templateUrl: 'partials/phone-detail.html',
-        controller: 'PhoneDetailCtrl'
+      when('/recipes/:recipeId', {
+        templateUrl: 'partials/recipe-detail.html',
+        controller: 'RecipeDetailCtrl'
       }).
       otherwise({
-        redirectTo: '/phones'
+        redirectTo: '/recipes'
       });
   }]);

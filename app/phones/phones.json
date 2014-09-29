@@ -1,6 +1,6 @@
 [
     {
-        "age": 0, 
+        "age": 5, 
         "id": "motorola-xoom-with-wi-fi", 
         "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg", 
         "name": "Motorola XOOM\u2122 with Wi-Fi", 
@@ -37,12 +37,12 @@
         "snippet": "The Samsung Gem\u2122 brings you everything that you would expect and more from a touch display smart phone \u2013 more apps, more features and a more affordable price."
     }, 
     {
-        "age": 5, 
+        "age": 0, 
         "carrier": "Dell", 
         "id": "dell-venue", 
         "imageUrl": "img/phones/dell-venue.0.jpg", 
         "name": "Dell Venue", 
-        "snippet": "The Dell Venue; Your Personal Express Lane to Everything"
+        "snippet": "The Dell Venue; Your Personal Express Lane to Everything (JMR)"
     }, 
     {
         "age": 6, 

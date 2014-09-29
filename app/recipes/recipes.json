@@ -1,19 +1,33 @@
 [
     {
-        "id": "aunt-sallys-meatloaf",
-        "productURL": "http://www.wallingspencer.com/prairie-raised-ground-beef/",
-        "imageUrl": "img/full/canstockphoto20052376.jpg", 
-        "imageThumbUrl": "img/thumbnail/canstockphoto20052376.jpg", 
-        "name": "Aunt Sally's Meatloaf", 
-        "snippet": "Not your mother's meatloaf"
-    }, 
-    {
         "id": "beef-carpaccio",
-        "productURL": "http://www.wallingspencer.com/filet-mignon-steak-2-pack/",
-        "alternateProductURL": "http://www.wallingspencer.com/sirloin-chateau-steaks-2-pack/",
-        "imageUrl": "img/full/canstockphoto18106517.jpg",
-        "imageThumbUrl": "img/thumbnail/canstockphoto18106517.jpg",
         "name": "Beef Carpaccio",
-        "snippet": "Italian version of beef tatare"
+        "snippet": "Italian version of beef tatare",
+        "stars": {
+            "avg": 1,
+            "max": 5,
+            "totalVotes": 100
+            },
+        "largeImageUrl": "img/large/canstockphoto18106517.jpg", 
+        "medumImageUrl": "img/medium/canstockphoto18106517.jpg", 
+        "smallImageUrl": "img/small/canstockphoto18106517.jpg",
+        "xsmallImageUrl": "img/xsmall/canstockphoto18106517.jpg",         
+        "productURL": "http://www.wallingspencer.com/filet-mignon-steak-2-pack/",
+        "alternateProductURL": "http://www.wallingspencer.com/sirloin-chateau-steaks-2-pack/"
+    },
+    {
+        "id": "aunt-sallys-meatloaf",
+        "name": "Aunt Sally's Meatloaf", 
+        "snippet": "Not your mother's meatloaf",
+        "stars": {
+            "avg": 3,
+            "max": 5,
+            "totalVotes": 80
+            },
+        "largeImageUrl": "img/large/canstockphoto20052376.jpg", 
+        "medumImageUrl": "img/medium/canstockphoto20052376.jpg", 
+        "smallImageUrl": "img/small/canstockphoto20052376.jpg",
+        "xsmallImageUrl": "img/xsmall/canstockphoto20052376.jpg", 
+        "productURL": "http://www.wallingspencer.com/prairie-raised-ground-beef/"
     }
 ]
